@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jore"
+    tools:context=".CustomList">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 +"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/squatCL"
+        android:layout_alignBottom="@+id/squatCL"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/overHeadPressCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/benchPressCL"
+        android:layout_alignLeft="@+id/benchPressCL"
+        android:layout_alignRight="@+id/benchPressCL"
+        android:layout_alignStart="@+id/benchPressCL"
+        android:layout_below="@+id/barBellRowCL"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/overheadpresscustome"
+        android:checked="false"
+        android:paddingRight="106dp"
+        android:text="Over Head Press"
+        android:textColor="@android:color/white"
+        android:textColorLink="@android:color/holo_red_dark"
+        app:buttonTint="#FF76071A" />
+
+    <CheckBox
+        android:id="@+id/deadLiftCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/overHeadPressCL"
+        android:layout_alignRight="@+id/overHeadPressCL"
+        android:layout_below="@+id/overHeadPressCL"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/deadliftcustome"
+        android:paddingRight="153dp"
+        android:text="Dead Lift"
+        android:textColor="@android:color/white"
+        app:buttonTint="@color/colorPrimaryDark" />
+
+    <CheckBox
+        android:id="@+id/barBellRowCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/barbellrowcustome"
+        android:checked="false"
+        android:paddingRight="130dp"
+        android:text="Bar Bell Row"
+        android:textColor="@android:color/white"
+        app:buttonTint="@color/colorPrimary"
+        android:layout_below="@+id/benchPressCL"
+        android:layout_alignRight="@+id/benchPressCL"
+        android:layout_alignEnd="@+id/benchPressCL"
+        android:layout_alignLeft="@+id/overHeadPressCL"
+        android:layout_alignStart="@+id/overHeadPressCL" />
+
+    <CheckBox
+        android:id="@+id/squatCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/squatcustome"
+        android:paddingRight="173dp"
+        android:text="Squat"
+        android:textColor="@android:color/white"
+        android:textColorLink="@color/colorPrimaryDark"
+        app:buttonTint="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView7" />
+
+    <CheckBox
+        android:id="@+id/benchPressCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/benchpresscustome"
+        android:paddingRight="133dp"
+        android:text="Bench Press"
+        android:textColor="@android:color/white"
+        app:buttonTint="#FF4C066C"
+        android:layout_below="@+id/squatCL"
+        android:layout_alignLeft="@+id/squatCL"
+        android:layout_alignStart="@+id/squatCL" />
+
+    <Button
+        android:id="@+id/doneB"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:background="#1565C0"
+        android:textColor="@android:color/white"
+        android:layout_height="40dp"
+        android:text="Done"
+        android:shape="rectangle"
+        android:layout_marginBottom="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 +"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_alignBaseline="@+id/deadLiftCL"
+        android:layout_alignBottom="@+id/deadLiftCL"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 +"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/barBellRowCL"
+        android:layout_alignBottom="@+id/barBellRowCL"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 +"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/overHeadPressCL"
+        android:layout_alignBottom="@+id/overHeadPressCL"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 +"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/benchPressCL"
+        android:layout_alignBottom="@+id/benchPressCL"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+
+</RelativeLayout>
